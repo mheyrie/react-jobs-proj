@@ -6,6 +6,12 @@ export default {
   ],
   theme: {
     extend: {
+      screens:{
+        sm: '480px',
+        md: '976px',
+        lg: '1100px',
+        xl: '1440px'
+      },
       fontFamily: {
         sans: ['Roboto', 'sans-serif']
       },
