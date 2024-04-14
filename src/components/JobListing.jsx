@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import {Link} from 'react-router-dom'
 
 const JobListing = ({job}) => {
 
@@ -32,7 +33,7 @@ const JobListing = ({job}) => {
             <i className="fa-solid fa-location-dot text-lg mr-2"></i> 
              {job.location}
             </div>
-            <a href={`/job/${job.id}`} className="h-[36px] bg-slate-500 hover:bg-deepMongoose text-white px-4 py-2 rounded-full text-center text-sm">Read More</a>
+            <Link to={`/job/${job.id}`} className="h-[36px] bg-slate-500 hover:bg-deepMongoose text-white px-4 py-2 rounded-full text-center text-sm">Read More</Link>
         </div>
         </div>
     </div>
