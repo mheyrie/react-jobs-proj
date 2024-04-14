@@ -59,7 +59,7 @@ const JobPage = () => {
                             </div>
                             </div>
 
-                            <div className="bg-white p-6 rounded-lg shadow-md mt-6">
+                            <div className="bg-white p-7  rounded-lg shadow-md mt-6">
                                 <h3 className="text-indigo-800 text-lg font-bold mb-6">
                                     Job Description
                                 </h3>
@@ -78,7 +78,7 @@ const JobPage = () => {
                     <aside>
                         
                         <div className="bg-white p-6 rounded-lg shadow-md">
-                            <h3 className="text-xl font-bold mb-6">Company Info</h3>
+                            <h3 className="text-xl font-bold mb-4">Company Info</h3>
 
                             <h2 className="text-2xl">{job.company.name}</h2>
 
@@ -90,7 +90,7 @@ const JobPage = () => {
 
                             <h3 className="text-xl">Contact Email:</h3>
 
-                            <p className="my-2 bg-indigo-100 p-2 font-bold text-wrap">
+                            <p className="my-2 bg-indigo-100 p-2 font-bold">
                                 {job.company.contactEmail}
                             </p>
 
