@@ -9,7 +9,7 @@ function index() {
     <>
         <Herosection/>
         <HomeCards/>
-        <JobListings/>
+        <JobListings isHome = {true}/>
         <ViewAllJobs/>
     </>
   )
