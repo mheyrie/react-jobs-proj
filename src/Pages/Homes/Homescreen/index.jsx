@@ -1,6 +1,6 @@
 import React from 'react'
-import Herosection from "../Herosection"
-import JobListings from "../JobListings"
+import Herosection from "../../../components/Herosection"
+import JobListings from "../../../components/JobListings"
 import ViewAllJobs from "../../../components/ViewAllJobs"
 import HomeCards from "../../../components/HomeCards"
 

@@ -1,4 +1,4 @@
-import React from 'react'
+import {Link} from 'react-router-dom'
 
 
 const HomeCards = () => {
@@ -13,7 +13,7 @@ const HomeCards = () => {
                     <p className="mt-2 mb-4">
                         Browse our React Jobs and start your career today
                     </p>
-                    <a href="/jobs.html" className="inline-block bg-black text-white rounded-lg px-4 py-2 font-semibold hover:bg-violet-200 hover:text-black">Browser Jobs</a>
+                    <Link to="/jobs" className="inline-block bg-black text-white rounded-lg px-4 py-2 font-semibold hover:bg-violet-200 hover:text-black">Browser Jobs</Link>
                 </div>
                 <div className="bg-indigo-100 p-4 rounded-lg shadow-md ">
                     <h2 className="text-2xl font-bold">
@@ -22,7 +22,7 @@ const HomeCards = () => {
                     <p className="mt-2 mb-4">
                         Showcase your Jobs to find the perfect developer for the Role(s)
                     </p>
-                    <a href="/jobs.html" className="inline-block bg-green-700 text-white rounded-lg px-4 py-2 font-semibold hover:bg-gray-300 hover:text-black">Add Jobs</a>
+                    <Link to="/add-job" className="inline-block bg-green-700 text-white rounded-lg px-4 py-2 font-semibold hover:bg-gray-300 hover:text-black">Add Jobs</Link>
                 </div>
             </div>
         </div>

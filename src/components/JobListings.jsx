@@ -1,7 +1,7 @@
 import React from 'react'
-import jobs from '../../jobs.json'
+import jobs from '../jobs.json'
 import '@fortawesome/fontawesome-free/css/all.css';
-import JobListing from "../../components/JobListing";
+import JobListing from "./JobListing";
 
 const JobListings = () => {
   const recentJobs = jobs.slice(0, 3)
