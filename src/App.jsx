@@ -6,6 +6,7 @@ import JobsPage from "./Pages/JobsPage"
 import NotFoundPage from "./Pages/NotFoundPage"
 import JobPage, {jobLoader} from "./Pages/JobPage"
 import AddJobPage from "./Pages/AddJobPage"
+import EditJobPage from "./Pages/EditJobPage"
 
 
 
@@ -39,6 +40,7 @@ const App = () => {
       <Route index element={<Home/>}/>
       <Route path="/jobs" element={<JobsPage/>}/>
       <Route path="/add-jobs" element={<AddJobPage addJobSubmit={addJob} />}/>
+      <Route path="/edit-job/:id" element={<EditJobPage/>} loader ={jobLoader} />
       <Route path="/jobs/:id" element={<JobPage deleteJob={deleteJob}/>} loader ={jobLoader} />
       <Route path="*" element={<NotFoundPage/>}/>
   
