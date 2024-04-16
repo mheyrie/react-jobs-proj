@@ -83,19 +83,6 @@
         "contactEmail": "contact@ipsumlorem.com",
         "contactPhone": "555-555-5555"
       }
-    },
-    {
-      "title": "Test Job 1",
-      "type": "Full-Time",
-      "location": "Nigeria",
-      "description": "This is my first test Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus aliquet egestas ipsum ut dictum. Nullam id diam at risus dapibus tincidunt non sit amet nisl. Maecenas pharetra libero vitae viverra condimentum. Proin sed placerat ante. Quisque a gravida ex, dictum cursus lectus.",
-      "salary": "Under $50K",
-      "company": {
-        "name": "Mary Co",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus aliquet egestas ipsum ut dictum.",
-        "contactEmail": "test@test.com"
-      },
-      "id": "wh6vDjg"
     }
   ]
 }
