@@ -14,12 +14,27 @@ const Navbar = () => {
                        <img className="h-10 w-auto rounded-full" src={logor} alt="logo"/>
                        <span className="hidden md:block text-[#00A8C5]  text-2xl font-bold ml-2">Available Job OFFERS</span> 
                     </NavLink>
-                    <div className="md:ml-auto">
+                    <div className="hidden md:flex md:ml-auto">
                         <div className="flex space-x-2">
                             <NavLink to="/" className={linkClass}>Home</NavLink>
                             <NavLink to="/jobs" className={linkClass}>Jobs</NavLink>
                             <NavLink to="/add-jobs" className={linkClass}>Add Jobs</NavLink>
                         </div>
+                    </div>   
+
+                        {/* Mobile screen */}
+                    
+                    <button id="menu-btn" className="block hamburger md:hidden">
+                        <span className="hamburger-top"></span>
+                        <span className="hamburger-middle"></span>
+                        <span className="hamburger-bottom"></span>
+                    </button>
+                </div>
+                <div className="">
+                    <div id="menu" className="flex flex-col mt-28 items-center space-y-6 font-bold left-2 right-2">
+                        <NavLink to="/" className={linkClass}>Home</NavLink>
+                        <NavLink to="/jobs" className={linkClass}>Jobs</NavLink>
+                        <NavLink to="/add-jobs" className={linkClass}>Add Jobs</NavLink>
                     </div>
                 </div>
             </div>
