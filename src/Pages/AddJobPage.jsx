@@ -29,7 +29,7 @@ const AddJobPage = ({addJobSubmit}) => {
                 name: companyName,
                 description: companyDescription,
                 contactEmail,
-                contactEmail
+                contactPhone
             }
         }
         addJobSubmit(newJob)

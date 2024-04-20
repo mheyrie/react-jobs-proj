@@ -32,7 +32,7 @@ const EditJobPage = ({editJobSubmit}) => {
                 name: companyName,
                 description: companyDescription,
                 contactEmail,
-                contactEmail
+                contactPhone
             }
         }
         editJobSubmit(editJob)
