@@ -7,8 +7,8 @@ const Navbar = () => {
     const [open, setOpen] = useState(false)
 
     const handleHamburger = () =>{
-        setOpen((prev) => !prev)
-        console.log(open)
+        setOpen((previ) => !previ)
+        // console.log(open)
     }
 
     const linkClass = ({isActive}) => isActive ? 'bg-black text-white hover:bg-lightAlabaster hover:text-white rounded-md px-3 py-2' :'text-white hover:bg-lightAlabaster hover:text-white rounded-md px-3 py-2'
@@ -29,22 +29,24 @@ const Navbar = () => {
                             <NavLink to="/add-jobs" className={linkClass}>Add Jobs</NavLink>
                         </div>
                     </div>   
-
-                        {/* Mobile screen */}
-                    {/* Hamburger Icon */}
-                    <button id="menu-btn" onClick={handleHamburger} className={`block hamburger md:hidden ${open ? 'open' : ''}`}>
-                        <span className="hamburger-top"></span>
-                        <span className="hamburger-middle"></span>
-                        <span className="hamburger-bottom"></span>
-                    </button>
                 </div>
-                <div className="">
-                    <div id="menu" className="flex flex-col mt-28 items-center space-y-6 font-bold left-2 right-2 hidden">
+
+                {/* Mobile screen */}
+                {open ? (
+                    <div className="md:hidden bg-yellow-500 m-20 my-40">
+                    <div id="menu" className="flex flex-col mt-40 items-center space-y-6 font-bold left-2 right-2 ">
                         <NavLink to="/" className={linkClass}>Home</NavLink>
                         <NavLink to="/jobs" className={linkClass}>Jobs</NavLink>
                         <NavLink to="/add-jobs" className={linkClass}>Add Jobs</NavLink>
                     </div>
                 </div>
+                ) : null }
+                {/* Hamburger Icon */}
+                <button id="menu-btn" onClick={handleHamburger} className={`block hamburger md:hidden ${open ? 'open' : ''}`}>
+                        <span className="hamburger-top"></span>
+                        <span className="hamburger-middle"></span>
+                        <span className="hamburger-bottom"></span>
+                    </button>
             </div>
         </div> 
     </nav>
