@@ -1,7 +1,15 @@
 import {NavLink} from 'react-router-dom'
 import logor from '../assets/images/logor.png'
+import { useState } from "react"
 
 const Navbar = () => {
+    
+    const [open, setOpen] = useState(false)
+
+    const handleHamburger = () =>{
+        setOpen((prev) => !prev)
+        console.log(open)
+    }
 
     const linkClass = ({isActive}) => isActive ? 'bg-black text-white hover:bg-lightAlabaster hover:text-white rounded-md px-3 py-2' :'text-white hover:bg-lightAlabaster hover:text-white rounded-md px-3 py-2'
 
@@ -23,15 +31,15 @@ const Navbar = () => {
                     </div>   
 
                         {/* Mobile screen */}
-                    
-                    <button id="menu-btn" className="block hamburger md:hidden">
+                    {/* Hamburger Icon */}
+                    <button id="menu-btn" onClick={handleHamburger} className="block hamburger md:hidden ">
                         <span className="hamburger-top"></span>
                         <span className="hamburger-middle"></span>
                         <span className="hamburger-bottom"></span>
                     </button>
                 </div>
                 <div className="">
-                    <div id="menu" className="flex flex-col mt-28 items-center space-y-6 font-bold left-2 right-2">
+                    <div id="menu" className="flex flex-col mt-28 items-center space-y-6 font-bold left-2 right-2 hidden">
                         <NavLink to="/" className={linkClass}>Home</NavLink>
                         <NavLink to="/jobs" className={linkClass}>Jobs</NavLink>
                         <NavLink to="/add-jobs" className={linkClass}>Add Jobs</NavLink>
