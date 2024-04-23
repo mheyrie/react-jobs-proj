@@ -32,7 +32,7 @@ const Navbar = () => {
 
                         {/* Mobile screen */}
                     {/* Hamburger Icon */}
-                    <button id="menu-btn" onClick={handleHamburger} className="block hamburger md:hidden ">
+                    <button id="menu-btn" onClick={handleHamburger} className={`block hamburger md:hidden ${open ? 'open' : ''}`}>
                         <span className="hamburger-top"></span>
                         <span className="hamburger-middle"></span>
                         <span className="hamburger-bottom"></span>
