@@ -23,7 +23,8 @@ export default {
         lightAlabaster: '#BCBABC',
         deepVoodoo: '#533C61',
         lightOysterPink: '#ECD0D0',
-        deepMongoose: '#B7A283'
+        deepMongoose: '#B7A283',
+        moroo: '#0A253F'
       }
     },
   },
