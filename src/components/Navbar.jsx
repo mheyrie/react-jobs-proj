@@ -7,7 +7,7 @@ const Navbar = () => {
     const [open, setOpen] = useState(false)
 
     const handleHamburger = () =>{
-        setOpen((previ) => !previ)
+        setOpen((prev) => !prev)
         // console.log(open)
     }
 
