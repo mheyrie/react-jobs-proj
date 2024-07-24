@@ -9,7 +9,7 @@ const JobListings = ({isHome = false}) => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const fectchJobs = async  () => {
+    const fetchJobs = async  () => {
       const apiUrl = isHome ? '/api/jobs?_limit=3' : '/api/jobs'
       try{
         const res = await fetch(apiUrl)
@@ -21,10 +21,11 @@ const JobListings = ({isHome = false}) => {
         setLoading(false)
       }
      }
-    fectchJobs();
+    fetchJobs();
   }, [])
 
   // const jobListings = isHome ? jobs.slice(0, 3) : jobs;
+
   return (
     <section className="bg-gray-200 px-4 py-10">
       <div className="container-xl lg:container m-auto">
