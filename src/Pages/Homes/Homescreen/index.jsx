@@ -3,6 +3,7 @@ import Herosection from "../../../components/Herosection"
 import JobListings from "../../../components/JobListings"
 import ViewAllJobs from "../../../components/ViewAllJobs"
 import HomeCards from "../../../components/HomeCards"
+import Reviews from "@/components/Reviews"
 
 function index() {
   return (
@@ -11,7 +12,7 @@ function index() {
         <HomeCards/>
         <JobListings isHome = {true}/>
         <ViewAllJobs/>
-        <Review/>
+        <Reviews/>
     </>
   )
 }
