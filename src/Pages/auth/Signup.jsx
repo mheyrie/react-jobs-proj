@@ -1,6 +1,13 @@
+import { ParticlesDemo } from "./ParticlesDemo"
+
 function Signup() {
   return (
-    <section className="bg-neutral-900 h-screen text-white">Signup</section>
+    <section className="relative">
+      <div className="">
+        <ParticlesDemo/>
+      </div>
+      <div className="text-black ">fgvhhj</div>
+      </section>
   )
 }
 export default Signup
