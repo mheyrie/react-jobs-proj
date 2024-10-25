@@ -50,9 +50,8 @@ const App = () => {
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route path="/" element={<MainLayout />}>
-        <Route path="/signup" element={<Signup />} />
         <Route index element={<Home />} />
-
+        <Route path="/signup" element={<Signup />} />
         <Route path="/jobs" element={<JobsPage />} />
         <Route
           path="/add-jobs"
@@ -68,7 +67,7 @@ const App = () => {
           element={<JobPage deleteJob={deleteJob} />}
           loader={jobLoader}
         />
-        <Route path="*" element={<NotFoundPage />} />
+        <Route path="/*" element={<NotFoundPage />} />
       </Route>
     )
   );
