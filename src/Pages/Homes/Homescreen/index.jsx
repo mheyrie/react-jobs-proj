@@ -11,6 +11,7 @@ function index() {
         <HomeCards/>
         <JobListings isHome = {true}/>
         <ViewAllJobs/>
+        <Review/>
     </>
   )
 }
