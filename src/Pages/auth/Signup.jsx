@@ -1,6 +1,6 @@
 function Signup() {
   return (
-    <div>Signup</div>
+    <section className="bg-neutral-900 h-screen text-white">Signup</section>
   )
 }
 export default Signup
